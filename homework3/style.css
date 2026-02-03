@@ -1,0 +1,109 @@
+
+table, th, td {
+  border: 1px solid black;
+}
+
+
+
+
+.container {
+  display: grid;
+  grid-template-areas:
+    "header header"
+    "menu content"
+    "footer footer";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  background-color: black;
+  padding: 5px;
+}
+
+
+
+
+.container div {
+  background-color: white;
+  padding: 10px;
+}
+
+
+
+.container div.header {
+  grid-area: header;
+  text-align: center;
+}
+
+
+
+
+.container div.menu {
+  display: flex;
+    grid-area: menu;
+  color: white;
+  justify-content: left;
+    align-items:start;
+background-color: black;
+}
+
+
+
+
+.container div.content {
+  grid-area: content;
+}
+
+
+
+
+.container div.footer {
+  grid-area: footer;
+  text-align: center;  
+}
+
+.summaryeducationexperience{
+    color:green;
+    border: green 5px groove;
+}
+
+.skills{
+    display: flex;
+    color:blue;
+    border: blue 5px groove;
+    
+    flex-direction: column;
+}
+
+.containerprojects {
+  display: grid;
+  grid-template-areas:
+    "name name name"
+    "img img img"
+    "img img img";
+  grid-template-columns: 1fr 3fr;
+  gap: 3px;
+  background-color: black;
+  padding: 5px;
+  border: purple 5px groove;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.containerprojects div.name{
+  background-color: white;
+  color: blue;
+  padding: 10px;
+}
+
+.containerprojects div.img{
+  background-color: white;
+  padding: 10px;
+}
+
+
+.resumebutton{
+    background-color: orange;
+    border: orange 5px groove;
+    padding: 10px;
+    text-align: center;
+    text-decoration: underline;
+    display: inline-block;
+}
