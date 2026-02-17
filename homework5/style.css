@@ -1,0 +1,250 @@
+
+
+@media (max-width: 990px) {
+  html {
+  font-size : 8px;
+  }
+  img {
+  width: 160px;                            
+  height: 90px;
+  }
+}
+
+
+
+table, th, td {
+  border: 1px solid black;
+}
+
+
+
+
+
+
+.menu {
+  
+  display: flex;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 25.3%;
+  height: 100vh;
+  background: white;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-between;         /*new*/
+}
+
+.menu a {                      
+  display: flex;
+  padding: 10px 15px;       
+  margin: 0;
+  color: white;
+  background-color: gray;
+  width: 100%;
+  box-sizing: border-box;
+  font-size: 30px;
+  flex-grow: 1;                     /*new*/
+  border: green 5px groove;
+  align-items: center;              /*new*/
+  justify-content: center;          /*new*/
+  
+} 
+
+.menu a:hover {                  
+  background-color: darkgray;
+  
+}
+
+.resumebutton {
+  
+  border: orange 2px groove;
+  border-width: 10px;
+  
+}
+
+.resumebutton:hover {
+  background-color: orange;
+  color: white;
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+
+
+.container {                      /*new*/
+  display: flex;
+  flex-direction: column-reverse;              /*new*/
+  margin-left: 25%;
+  box-sizing: border-box;
+  background: white;
+  margin-bottom: 50px;
+  flex: auto;                  /*new*/
+}
+
+.outerprojects {
+  background: white;
+  border: purple 5px groove;
+}
+
+
+
+
+
+.titlebox {
+  padding-bottom: 10px;
+  margin-left: 24%;
+  margin-top: -29px;
+  background: white;
+}
+
+.text{
+  display: flex;
+  flex-direction: column;               /*new*/
+  border: 5px groove green;
+  padding: 10px;
+  text-align: center;
+  margin-bottom: 10px;
+  background: gray;
+  width: 75%;
+  position: fixed;          
+  
+}
+
+
+.summaryeducationexperience {
+color: green;
+  border: green 5px groove;
+  padding: 20px;        
+     
+  background: white;
+}
+
+
+.skills {
+  display: grid;
+  grid-template-columns: 1fr;                 /*new*/
+  gap: 20px;
+  color: blue;
+  border: blue 5px groove;
+  background-color: white;
+  padding: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;         
+}
+
+.skills h3 {
+  grid-column: 1 / -1;
+}
+
+.skills b {
+  border: 2px solid blue;
+  padding: 8px;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.skills ul {
+  border: 2px solid blue;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+.skills:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);       
+}
+
+
+
+.containerprojects {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 15px;
+  background-color: black;
+  padding: 20px;             
+  border: purple 5px groove;
+  overflow: hidden;
+}
+
+.outereducation:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);       
+}
+
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr 1fr;       /*new*/
+  gap: 10px;
+  align-items: start;
+}
+
+.project .name {
+  grid-column: 1 / -1;
+  background-color: white;
+  color: blue;
+  padding: 10px;
+}
+
+.thewordprojects {
+  color: black;
+  text-align: center;
+  margin-bottom: -10px;
+}
+
+.containerprojects img {
+  max-width: 100%;
+  height: auto;
+  transition: opacity 0.2s ease, transform 0.2s ease;      
+}
+
+.containerprojects img:hover {
+  opacity: 0.3;        
+  transform: scale(1.23);       
+}
+
+.containerprojects .name {
+  background-color: white;
+  color: blue;
+  padding: 10px;
+}
+
+
+
+
+
+
+
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;              /*new*/
+  align-items: center;
+  background: gray;
+  border: orange 5px groove;
+  padding: 0px;
+  text-align: center;
+  position: fixed;
+  bottom: 0;
+  width: 75%;
+  left: 25%;
+  height: 75px;
+  flex: auto;  
+}
+
+#Summary,
+#Projects,
+#Skills,
+#Education,
+#Contact {
+  scroll-margin-top: 120px;
+}                                                  /* new */
+
+.outereducation {
+  margin-bottom: 20px;
+}
+
