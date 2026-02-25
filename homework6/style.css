@@ -1,0 +1,121 @@
+
+.stack-row {
+	margin-bottom: 30px;
+}
+
+h2 {
+	margin-top: 0;
+	scroll-margin-top: 70px;
+}
+
+h3 {
+	margin-top: 50px;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	padding-bottom: 100px;
+	padding-top: 50px;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: 'Playfair Display', serif;
+	font-weight: 700;
+}
+
+
+.navbar {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	z-index: 1000;
+	width: 100%;
+}
+
+
+.footer {
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	width: 100%;
+	height: 100px;
+	z-index: 999;
+	background-color: lightgray;
+	padding: 20px 0;
+	margin: 0;
+}
+
+
+.card {
+	border: 1px solid #ddd;
+	border-radius: 4px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease;
+}
+
+.card:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.card-img-top {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 4px 4px 0 0;
+}
+
+.card-title {
+	margin-bottom: 0.5rem;
+}
+
+.card-body {
+	padding: 15px;
+}
+
+.bg-gradient-primary {
+	background: linear-gradient(135deg, #007bff 0%, #0056b3 100%);
+	color: white;
+}
+
+.bg-gradient-primary h1 {
+	color: white;
+}
+
+.bg-gradient-primary p {
+	color: white;
+}
+
+.bg-gradient-secondary {
+	background: linear-gradient(135deg, #d3d3d3 0%, #808080 100%);
+}
+
+.bg-gradient-secondary h2 {
+	color: black;
+}
+
+.bg-gradient-secondary a {
+	color: black;
+	text-decoration: underline;
+}
+
+
+.font-weight-bold {
+	font-weight: 700;
+}
+
+.text-muted {
+	color: #6c757d;
+}
+
+
+.card-title.h5 {
+	font-size: 1.25rem;
+	margin-bottom: 0.75rem;
+}
